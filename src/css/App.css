@@ -14,26 +14,142 @@ body {
   text-align: center;
   background: #dde1e7;
 }
-.form-header {
-  width: 600px;
+.main-container {
+  width: 630px;
   background: #dde1e7;
   border-radius: 10px;
   padding: 40px 30px;
   box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-.form-header .form-header-logo {
+.main-container .heading-text {
+  font-size: 25px;
+  font-weight: 600;
+  color: #0b0b0b;
+}
+.main-container .form-header-logo {
   width: 90px;
   height: 90px;
   margin-top: -100px;
   border-radius: 50px;
   box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
 }
-.form-header .signup-legend {
+.main-container .signup-legend {
   padding: 10px;
-  font-size: smaller;
+  font-size: small;
+  font-weight: 300;
 }
-.form-header .signup-url-text {
+.main-container .signup-url-text {
   color: #23dffc73;
   font-weight: bold;
+}
+.form-input-content {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.form-input-content input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #dde1e7;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.form-input-content input:focus {
+  box-shadow: inset 2px 2px 5px #4e515c, inset -1px -1px 2px #ffffff73;
+}
+.form-input-content span {
+  position: absolute;
+  width: 500px;
+  line-height: 5000px;
+  color: #595959;
+}
+.form-input-content {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.form-input-content input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #dde1e7;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.form-input-content span {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #595959;
+}
+.form-input-content input:focus ~ label {
+  box-shadow: inset 2px 2px 5px #babecc, inset -1px -1px 2px #ffffff73;
+}
+.submit-control {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 25px 0 25px 0;
+}
+.submit-control .login-btn {
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background: #dde1e7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+}
+.submit-control .login-btn:focus {
+  color: #6bd2ee;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.submit-control .login-btn:hover {
+  color: #6bd2ee;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.social-media .social-btn-container .social-btn {
+  margin: 0;
+  width: 50%;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background: #dde1e7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+}
+.social-media .social-btn-container .social-btn:focus {
+  color: #6bd2ee;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.social-media .social-btn-container .social-btn:hover {
+  color: #6bd2ee;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.or {
+  color: black;
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=App.css.map */

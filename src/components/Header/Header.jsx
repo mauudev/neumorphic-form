@@ -11,7 +11,7 @@ const Header = ({
     return (
         <header className="form-header">
             <img src={logo} className="form-header-logo" alt="logo" />
-            <h2>{heading}</h2>
+            <h2 className="heading-text">{heading}</h2>
             <p className="signup-legend">
                 {paragraph} {' '}
                 <Link to={linkUrl} className="signup-url-text">
