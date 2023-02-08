@@ -8,13 +8,18 @@ const Input = ({
     id,
     name,
     type,
-    isRequired=true,
+    isRequired = true,
     placeholder
 }) => {
     return (
-        <div className='form-input-content'>
-            <span className="fa fa-user"></span>
+        <div className='input-container'>
+            { 
+                type == "password" ? 
+                <i className="fa fa-key icon"></i> :
+                <i className="fa fa-user icon"></i>  
+            }
             <input
+                className='form-input'
                 onChange={handleChange}
                 value={value}
                 id={id}

@@ -30,8 +30,8 @@ const Login = () => {
     }
 
     return (
-        <form className='login-form' onSubmit={handleSubmit}>
-            <div className='form-content'>
+        <div className='form-content'>
+            <form className='login-form' onSubmit={handleSubmit}>
                 {
                     fields.map(field =>
                         <Input
@@ -48,38 +48,68 @@ const Login = () => {
                         />
                     )
                 }
-            </div>
-            <div className='submit-control'>
-                <Button
-                    type="submit"
-                    className="login-btn"
-                    label="Login"
-                    spanClassName="fa fa-login"
-                >
-                </Button>
-            </div>
-            <div className='or'>Or</div>
-            <div className='social-media'>
-                <div className='social-btn-container'>
+                <div className='form-control'>
+                    <div className='login-button-container'>
+                        <Button
+                            type="submit"
+                            className="login-btn"
+                            label="Login"
+                            spanClassName="fa fa-login"
+                        >
+                        </Button>
+                    </div>
+                    <div className='text-divider'>
+                        <h2>Or</h2>
+                    </div>
+                    <div className='social-media'>
+                        <Button
+                            type="button"
+                            className="social-btn"
+                            label="Facebook"
+                            spanClassName="fa fa-facebook-square"
+                        >
+                        </Button>
+                        <Button
+                            type="button"
+                            className="social-btn"
+                            label="Google"
+                            spanClassName="fa fa-google"
+                        >
+                        </Button>
+                    </div>
+                </div>
+                {/* <div className='submit-control'>
                     <Button
-                        onClick={onSocialMediaClick}
-                        type="button"
-                        className="social-btn"
-                        spanClassName="fa fa-facebook"
-                        label="Facebook"
-                    >
-                    </Button>
-                    <Button
-                        onClick={onSocialMediaClick}
-                        type="button"
-                        className="social-btn"
-                        label="Google"
-                        spanClassName="fa fa-google"
+                        type="submit"
+                        className="login-btn"
+                        label="Login"
+                        spanClassName="fa fa-login"
                     >
                     </Button>
                 </div>
-            </div>
-        </form>
+                <div className='or'>Or</div>
+                <div className='social-media'>
+                    <div className='social-btn-container'>
+                        <Button
+                            onClick={onSocialMediaClick}
+                            type="button"
+                            className="social-btn"
+                            spanClassName="fa fa-facebook"
+                            label="Facebook"
+                        >
+                        </Button>
+                        <Button
+                            onClick={onSocialMediaClick}
+                            type="button"
+                            className="social-btn"
+                            label="Google"
+                            spanClassName="fa fa-google"
+                        >
+                        </Button>
+                    </div>
+                </div> */}
+            </form>
+        </div>
     )
 }
 
