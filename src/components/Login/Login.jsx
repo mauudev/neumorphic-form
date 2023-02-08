@@ -45,6 +45,7 @@ const Login = () => {
                             type={field.type}
                             isRequired={field.isRequired}
                             placeholder={field.placeholder}
+                            iconClass={field.iconClass}
                         />
                     )
                 }
@@ -78,36 +79,6 @@ const Login = () => {
                         </Button>
                     </div>
                 </div>
-                {/* <div className='submit-control'>
-                    <Button
-                        type="submit"
-                        className="login-btn"
-                        label="Login"
-                        spanClassName="fa fa-login"
-                    >
-                    </Button>
-                </div>
-                <div className='or'>Or</div>
-                <div className='social-media'>
-                    <div className='social-btn-container'>
-                        <Button
-                            onClick={onSocialMediaClick}
-                            type="button"
-                            className="social-btn"
-                            spanClassName="fa fa-facebook"
-                            label="Facebook"
-                        >
-                        </Button>
-                        <Button
-                            onClick={onSocialMediaClick}
-                            type="button"
-                            className="social-btn"
-                            label="Google"
-                            spanClassName="fa fa-google"
-                        >
-                        </Button>
-                    </div>
-                </div> */}
             </form>
         </div>
     )

@@ -7,7 +7,8 @@ const loginFields = [
         type: "email",
         autoComplete: "email",
         isRequired: true,
-        placeholder: "Email address"
+        placeholder: "Email address",
+        iconClass: "fa fa-user icon"
     },
     {
         labelText: "Password",
@@ -17,7 +18,8 @@ const loginFields = [
         type: "password",
         autoComplete: "current-password",
         isRequired: true,
-        placeholder: "Password"
+        placeholder: "Password",
+        iconClass: "fa fa-key icon"
     }
 ]
 
@@ -30,7 +32,8 @@ const signupFields = [
         type: "text",
         autoComplete: "username",
         isRequired: true,
-        placeholder: "Username"
+        placeholder: "Username",
+        iconClass: "fa fa-user icon"
     },
     {
         labelText: "Email address",
@@ -40,7 +43,8 @@ const signupFields = [
         type: "email",
         autoComplete: "email",
         isRequired: true,
-        placeholder: "Email address"
+        placeholder: "Email address",
+        iconClass: "fa fa-envelope icon"
     },
     {
         labelText: "Password",
@@ -50,7 +54,8 @@ const signupFields = [
         type: "password",
         autoComplete: "current-password",
         isRequired: true,
-        placeholder: "Password"
+        placeholder: "Password",
+        iconClass: "fa fa-key icon"
     },
     {
         labelText: "Confirm Password",
@@ -60,7 +65,8 @@ const signupFields = [
         type: "password",
         autoComplete: "confirm-password",
         isRequired: true,
-        placeholder: "Confirm Password"
+        placeholder: "Confirm Password",
+        iconClass: "fa fa-key icon"
     }
 ]
 

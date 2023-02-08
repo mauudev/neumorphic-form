@@ -22,8 +22,8 @@ const Signup = () => {
     }
 
     return (
-        <form className='signup-form' onSubmit={handleSubmit}>
-            <div className='form-content'>
+        <div className='form-content'>
+            <form className='signup-form' onSubmit={handleSubmit}>
                 {
                     fields.map(field =>
                         <Input
@@ -37,12 +37,24 @@ const Signup = () => {
                             type={field.type}
                             isRequired={field.isRequired}
                             placeholder={field.placeholder}
+                            iconClass={field.iconClass}
                         />
                     )
                 }
-            </div>
-        </form>
-    )    
+                <div className='form-control'>
+                    <div className='signup-button-container'>
+                        <Button
+                            type="submit"
+                            className="signup-btn"
+                            label="Signup"
+                            spanClassName="fa fa-signup"
+                        >
+                        </Button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    )
 }
 
 export default Signup;

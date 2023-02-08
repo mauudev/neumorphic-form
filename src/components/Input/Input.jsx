@@ -9,15 +9,12 @@ const Input = ({
     name,
     type,
     isRequired = true,
-    placeholder
+    placeholder,
+    iconClass
 }) => {
     return (
         <div className='input-container'>
-            { 
-                type == "password" ? 
-                <i className="fa fa-key icon"></i> :
-                <i className="fa fa-user icon"></i>  
-            }
+            <i className={iconClass}></i>  
             <input
                 className='form-input'
                 onChange={handleChange}
