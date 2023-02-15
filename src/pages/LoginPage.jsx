@@ -6,13 +6,15 @@ import Login from "../components/Login/Login"
 export default function LoginPage() {
     return (
         <>
-            <Header
-                heading={ headerFields.heading }
-                paragraph={ headerFields.paragraph }
-                linkName={ headerFields.linkName }
-                linkUrl={ headerFields.linkUrl }
-            />
-            <Login />
+            <div className='user-info-content'>
+                <Header
+                    heading={headerFields.heading}
+                    paragraph={headerFields.paragraph}
+                    linkName={headerFields.linkName}
+                    linkUrl={headerFields.linkUrl}
+                />
+                <Login />
+            </div>
         </>
     )
 }
